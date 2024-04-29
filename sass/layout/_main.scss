@@ -1,0 +1,86 @@
+main {
+    position: relative;
+    section:first-child {
+        img {
+            position: relative;
+            max-width: 58%;
+        }
+        article {
+            position: absolute;
+            max-width: 50%;
+            top: 70px;
+            right: 30px;
+            background-color: rgb(255,255,255,.8);
+            padding: 30px;
+            display: grid;
+
+            h1 {
+                width: 60%;
+                font-size: 56px;
+            }
+            p {
+                font-size: 24px;
+                padding-top: 40px;
+                padding-right: 100px;
+                padding-bottom: 40px;
+            }
+            div {
+                background-color: #9B9A78;
+                height: 10px;
+                width: 10%;
+                display: inline-block;
+                position: absolute;
+                top: 70px;
+                right: 230px;
+            }
+        }
+    }
+    aside {
+        display: flex;
+        position: absolute;
+        right: 200px;
+        top: 530px;
+        ul {
+            display: grid;
+            gap: 10px 30px;
+            grid-template-areas: "virtual_office open_workspace"
+                                 "space_for_event chill_out";
+            li {
+                display: flex;
+                &:before{
+                    content: url("/img/check.svg");
+                    padding-right: 10px;
+                }
+            }
+            li:nth-of-type(1){
+                grid-area: virtual_office;
+                display: flex;
+                
+                
+            }
+            li:nth-of-type(2){
+                grid-area: open_workspace;
+            }
+            li:nth-of-type(3){
+                grid-area: space_for_event;
+            }
+            li:nth-of-type(4){
+                grid-area: chill_out;
+            }
+        }  
+    }
+    section:nth-of-type(2){
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-evenly;
+        article {
+            width: 25%;
+            font-size: 24px;
+            p:nth-of-type(2){
+                font-size: 18px;
+                color: #909090;
+            }
+            
+        }
+    }
+}

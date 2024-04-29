@@ -1,0 +1,32 @@
+.navigation-bar {
+    display: flex;
+    ul {
+        li {
+            padding-left: 50px;
+            a:hover {
+                color: #9B9A78;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.search-navigation {
+    display: flex;
+    align-items: center;
+    ul {
+        li {
+            padding-left: 30px;
+            a {
+                padding: 15px 20px;
+                border-radius: 5px;
+            }
+        }
+    }
+    img:hover {
+        transform: scale(1.1);
+    }
+}
+
+
+

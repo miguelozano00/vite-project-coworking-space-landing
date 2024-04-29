@@ -1,0 +1,15 @@
+.sign-in-buttom {
+    color: #9B9A78;
+    text-decoration: underline;
+    &:hover {
+        color: #838265;
+    }
+}
+
+.sign-up-buttom {
+    color: white;
+    background-color: #9B9A78;
+    &:hover {
+        background-color: #838265;
+    }
+}

@@ -1,0 +1,19 @@
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    background-color: white;
+    & > a {
+        transition-duration: 0.3s;
+    }
+    & > a:hover {
+        transform: scale(1.1);
+    }
+}
+
+
